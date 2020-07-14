@@ -1,0 +1,61 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &__top {
+        text-align: center;
+        margin-bottom: 50px;
+        h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        p {
+            letter-spacing: 0.1px;
+        }
+    }
+
+    &__register-link {
+        text-align: center;
+        display: block;
+        letter-spacing: 0.1px;
+        color: #adadad;
+        font-size: 16px;
+    }
+
+    &__success-block {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 170px;
+        svg {
+            width: 55px;
+            height: 55px;
+        }
+        h3 {
+            height: 30px;
+        }
+        p {
+            color: #adadad;
+            letter-spacing: 0.1px;
+        }
+    }
+
+    .button {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        width: 100%;
+    }
+
+    .block {
+        width: 430px;
+        padding: 45px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.0402);
+        border-radius: 5px;
+    }
+}

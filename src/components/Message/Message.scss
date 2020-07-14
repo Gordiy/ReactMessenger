@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.message {
+    display: flex;
+    max-width: 440px;
+    margin-bottom: 15px;
+
+    &__avatar {
+        display: flex;
+        flex-direction: column-reverse;
+        img {
+            border-radius: 50px;
+            width: 33px;
+            height: 33px;
+            margin-right: 13px; // відсут з права.
+            margin-bottom: 23px;
+        }
+    }
+
+    &__date {
+        font-size: 12px;
+        opacity: 0.4; // чіткість кольору тексту
+    }
+
+    &__text {
+        color: #ffffff;
+        line-height: 20px;
+    }
+
+    &--isme {
+        display: flex;
+        flex-direction: row-reverse;
+        &__bubble {
+            background: #ffffff;
+            border: 1px solid #ececec;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.0220444);
+            border-radius: 12px 12px 0px 12px;
+        }
+    }
+
+    &__bubble {
+        background-image: $blue;
+        border-radius: 12px 12px 12px 0px;
+        padding: 15px;
+        margin-bottom: 8px; // відступ знизу від дати 
+    }
+}
